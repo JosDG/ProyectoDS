@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LogiCode</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">LogiCode</h1>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+            <div class="sidebar-user">
+                <div class="user-avatar">
+                    <img src="../img/avatar-placeholder.png" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3 class="user-name">Usuario</h3>
+                    <div class="user-level">
+                        <span class="level-badge">Nivel 5</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="dashboard.html">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="games.html">
+                            <span class="nav-icon">🎮</span>
+                            <span class="nav-text">Juegos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html">
+                            <span class="nav-icon">📚</span>
+                            <span class="nav-text">Cursos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progress.html">
+                            <span class="nav-icon">📈</span>
+                            <span class="nav-text">Progreso</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forum.html">
+                            <span class="nav-icon">💬</span>
+                            <span class="nav-text">Foro</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="achievements.html">
+                            <span class="nav-icon">🏆</span>
+                            <span class="nav-text">Logros</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="settings.html">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="btn btn-outline">Cerrar sesión</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span class="toggle-icon">🌙</span>
+                    </button>
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <span class="notification-icon">🔔</span>
+                            <span class="notification-badge">3</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h2>Bienvenido de nuevo, <span id="user-name">Usuario</span>!</h2>
+                    <p>Continúa tu aprendizaje donde lo dejaste.</p>
+                </section>
+                <section class="stats-section">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-info">
+                                <h3>Nivel</h3>
+                                <p class="stat-value">5</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⭐</div>
+                            <div class="stat-info">
+                                <h3>Puntos</h3>
+                                <p class="stat-value">1,250</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-info">
+                                <h3>Logros</h3>
+                                <p class="stat-value">12/30</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-info">
+                                <h3>Progreso</h3>
+                                <p class="stat-value">45%</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recent-activity">
+                    <div class="section-header">
+                        <h2>Actividad reciente</h2>
+                        <a href="activity.html" class="view-all">Ver todo</a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">🎮</div>
+                            <div class="activity-details">
+                                <h3>Completaste "Lógica Booleana"</h3>
+                                <p>Obtuviste 50 puntos</p>
+                                <span class="activity-time">Hace 2 horas</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📚</div>
+                            <div class="activity-details">
+                                <h3>Avanzaste en el curso "Introducción a JavaScript"</h3>
+                                <p>Completaste la lección 3 de 10</p>
+                                <span class="activity-time">Ayer</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">🏆</div>
+                            <div class="activity-details">
+                                <h3>Desbloqueaste el logro "Principiante Dedicado"</h3>
+                                <p>Completaste 5 lecciones consecutivas</p>
+                                <span class="activity-time">Hace 2 días</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="dashboard-grid">
+                    <section class="recommended-section">
+                        <div class="section-header">
+                            <h2>Recomendado para ti</h2>
+                        </div>
+                        <div class="recommended-list">
+                            <div class="recommended-item">
+                                <div class="recommended-icon">🎮</div>
+                                <div class="recommended-details">
+                                    <h3>Juego: Algoritmo Race</h3>
+                                    <p>Pon a prueba tu conocimiento de algoritmos</p>
+                                    <a href="games/algorithm-race.html" class="btn btn-sm">Jugar ahora</a>
+                                </div>
+                            </div>
+                            <div class="recommended-item">
+                                <div class="recommended-icon">📚</div>
+                                <div class="recommended-details">
+                                    <h3>Curso: Estructuras de Datos</h3>
+                                    <p>Aprende sobre arrays, listas enlazadas y más</p>
+                                    <a href="courses/data-structures.html" class="btn btn-sm">Continuar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="community-section">
+                        <div class="section-header">
+                            <h2>Comunidad</h2>
+                            <a href="forum.html" class="view-all">Ver foro</a>
+                        </div>
+                        <div class="forum-preview">
+                            <div class="forum-post">
+                                <h3>Discusión destacada</h3>
+                                <p>¿Cuál es la mejor manera de implementar un algoritmo de ordenamiento?</p>
+                                <div class="post-meta">
+                                    <span>15 respuestas</span>
+                                    <span>Activo hace 3 horas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

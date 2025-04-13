@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - LogiCode</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/games.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <!-- Sidebar content similar to dashboard.html -->
+            <div class="sidebar-header">
+                <h1 class="logo">LogiCode</h1>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+            <div class="sidebar-user">
+                <div class="user-avatar">
+                    <img src="../img/avatar-placeholder.png" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3 class="user-name">Usuario</h3>
+                    <div class="user-level">
+                        <span class="level-badge">Nivel 5</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="dashboard.html">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="games.html">
+                            <span class="nav-icon">🎮</span>
+                            <span class="nav-text">Juegos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html">
+                            <span class="nav-icon">📚</span>
+                            <span class="nav-text">Cursos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progress.html">
+                            <span class="nav-icon">📈</span>
+                            <span class="nav-text">Progreso</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forum.html">
+                            <span class="nav-icon">💬</span>
+                            <span class="nav-text">Foro</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="achievements.html">
+                            <span class="nav-icon">🏆</span>
+                            <span class="nav-text">Logros</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="settings.html">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="btn btn-outline">Cerrar sesión</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <h1>Juegos Educativos</h1>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span class="toggle-icon">🌙</span>
+                    </button>
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <span class="notification-icon">🔔</span>
+                            <span class="notification-badge">3</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <div class="content-body">
+                <section class="games-intro">
+                    <h2>Aprende jugando</h2>
+                    <p>Mejora tus habilidades de programación y lógica con nuestros juegos interactivos.</p>
+                    <div class="game-attempts-info">
+                        <div class="attempts-counter">
+                            <span class="attempts-icon">🎮</span>
+                            <span class="attempts-text">Intentos disponibles: <strong id="attempts-count">5</strong></span>
+                        </div>
+                        <div class="attempts-timer">
+                            <span class="timer-icon">⏱️</span>
+                            <span class="timer-text">Próximo intento en: <strong id="next-attempt-timer">25:13</strong></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/logic-quiz.png" alt="Logic Quiz">
+                        </div>
+                        <div class="game-content">
+                            <h3>Quiz de Lógica</h3>
+                            <p>Pon a prueba tus conocimientos de lógica booleana y operadores.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Fácil</span>
+                                <span class="points">+50 pts</span>
+                            </div>
+                            <a href="games/logic-quiz.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/code-completion.png" alt="Code Completion">
+                        </div>
+                        <div class="game-content">
+                            <h3>Completar Código</h3>
+                            <p>Completa fragmentos de código para resolver problemas.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Intermedio</span>
+                                <span class="points">+75 pts</span>
+                            </div>
+                            <a href="games/code-completion.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/algorithm-race.png" alt="Algorithm Race">
+                        </div>
+                        <div class="game-content">
+                            <h3>Carrera de Algoritmos</h3>
+                            <p>Optimiza algoritmos para ganar la carrera contra el tiempo.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Difícil</span>
+                                <span class="points">+100 pts</span>
+                            </div>
+                            <a href="games/algorithm-race.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/memory-match.png" alt="Memory Match">
+                        </div>
+                        <div class="game-content">
+                            <h3>Memory Match</h3>
+                            <p>Encuentra pares de conceptos de programación.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Fácil</span>
+                                <span class="points">+40 pts</span>
+                            </div>
+                            <a href="games/memory-match.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/logic-gates.png" alt="Logic Gates">
+                        </div>
+                        <div class="game-content">
+                            <h3>Puertas Lógicas</h3>
+                            <p>Construye circuitos con puertas lógicas para resolver problemas.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Intermedio</span>
+                                <span class="points">+60 pts</span>
+                            </div>
+                            <a href="games/logic-gates.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="../img/games/code-puzzle.png" alt="Code Puzzle">
+                        </div>
+                        <div class="game-content">
+                            <h3>Rompecabezas de Código</h3>
+                            <p>Ordena bloques de código para crear un programa funcional.</p>
+                            <div class="game-meta">
+                                <span class="difficulty">Intermedio</span>
+                                <span class="points">+70 pts</span>
+                            </div>
+                            <a href="games/code-puzzle.html" class="btn btn-primary">Jugar</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/games.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Authentication pages styles */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--muted);
+    padding: 2rem;
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--background);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .auth-header {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .auth-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-subtitle {
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+  }
+  
+  .auth-form {
+    padding: 0 2rem 2rem;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .forgot-password {
+    color: var(--primary);
+  }
+  
+  .auth-footer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 480px) {
+    .auth-card {
+      max-width: 100%;
+    }
+  
+    .form-options {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  

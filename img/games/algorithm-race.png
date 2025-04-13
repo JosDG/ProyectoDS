@@ -1,0 +1,4 @@
+<svg width="300" height="160" viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="160" fill="#f8f9fa"/>
+  <text x="150" y="80" font-family="Arial" font-size="18" text-anchor="middle" fill="#6d28d9">Algorithm Race Game</text>
+</svg>
